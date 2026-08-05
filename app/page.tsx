@@ -99,7 +99,7 @@ const projects = [
     tone: "lime",
     image: "/project-nutrition-website.webp",
     imageAlt: "Nutrition Website project emblem illustrating BMI, BMR, calorie estimation, nutrition guidance, and OTP verification",
-    link: "https://drive.google.com/file/d/1swxHqtUebx3PfPqZ4Zpuxh7_QBDfrSTs/view?usp=sharing",
+    link: "https://roy056.github.io/nutrition-intelligence/",
   },
 ];
 
