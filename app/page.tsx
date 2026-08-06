@@ -321,6 +321,14 @@ export default function Home() {
               <strong>Dibakar Roy</strong>
               <span>ECE Graduate · Neural Engineering Researcher</span>
             </figcaption>
+            <div className="education-card">
+              <GraduationCap size={22} />
+              <div>
+                <span>2022 — 2026</span>
+                <strong>Rajshahi University of Engineering &amp; Technology</strong>
+                <small>BSc, Electrical &amp; Computer Engineering · CGPA 3.39 / 4.00</small>
+              </div>
+            </div>
           </figure>
           <div className="about-main reveal">
             <span className="eyebrow">04 · About</span>
@@ -328,7 +336,6 @@ export default function Home() {
             <p>I recently completed my BSc in Electrical &amp; Computer Engineering at Rajshahi University of Engineering &amp; Technology, with a research focus on neural engineering, brain-computer interfaces, and biomedical machine learning.</p>
             <p>I enjoy crossing boundaries between signal processing, machine learning, embedded systems, and full-stack software to build systems that remain useful beyond controlled settings.</p>
             <p>Alongside research, I&apos;ve served as a class representative, supported university and American Center events, and represented my department in competitive sports.</p>
-            <div className="education-card"><GraduationCap size={24} /><div><span>2022 — 2026</span><strong>Rajshahi University of Engineering &amp; Technology</strong><small>BSc, Electrical &amp; Computer Engineering · CGPA 3.39 / 4.00</small></div></div>
           </div>
           <div className="skills-panel reveal">
             <span className="micro-label">Toolkit</span>
