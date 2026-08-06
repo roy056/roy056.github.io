@@ -65,15 +65,16 @@ const publications = [
 const projects = [
   {
     number: "01",
-    title: "Department Event Hub",
-    subtitle: "Full-stack platform",
+    title: "trECEnto",
+    subtitle: "ECE event platform",
     description:
-      "A centralized event management system with role-based dashboards, secure authentication, email verification, and real-time updates.",
-    tags: ["Next.js", "MERN", "RBAC"],
+      "A responsive ECE event platform with discovery, verified accounts, registration, announcements, role-based administration, and participation analytics.",
+    tags: ["Next.js", "RBAC", "Analytics"],
     icon: Code2,
     tone: "purple",
     image: "/project-event-management.webp",
     imageAlt: "Event Management Website project overview showing dashboards, role-based access control, email verification, and the Next.js MERN stack",
+    link: "https://roy056.github.io/trecento/",
   },
   {
     number: "02",
