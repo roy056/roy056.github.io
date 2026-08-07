@@ -169,40 +169,42 @@ export default function Home() {
 
       <main id="main-content" tabIndex={-1}>
         <section className="about-section page-section" id="about">
-          <div className="intro-block">
-            <p className="kicker">Electrical &amp; Computer Engineering</p>
-            <h1>Dibakar Roy</h1>
-            <p className="intro-role">ECE graduate with research interests in neural engineering, brain-computer interfaces, EEG signal processing, and biomedical machine learning.</p>
-            <p className="affiliation">Rajshahi University of Engineering &amp; Technology (RUET), Bangladesh</p>
-          </div>
-
           <div className="about-grid">
-            <article className="about-copy">
-              <h2>About</h2>
-              <p>
-                I completed my BSc in Electrical &amp; Computer Engineering at RUET in 2026. My undergraduate research examined practical adaptation methods for neural decoding and subject-independent EEG workload classification.
-              </p>
-              <p>
-                I am interested in neural signal processing, brain-computer interfaces, and machine learning methods that remain reliable across people, recording sessions, and sensor configurations. I also enjoy building software and embedded systems that translate technical ideas into usable tools.
-              </p>
-              <p>
-                During my undergraduate studies, I served as a class representative, supported university and American Center events, and represented my department in competitive sports.
-              </p>
-
-              <div className="research-interests" aria-label="Research interests">
-                <strong>Research interests</strong>
-                <span>Neural decoding</span>
-                <span>EEG</span>
-                <span>Brain-computer interfaces</span>
-                <span>Biomedical machine learning</span>
+            <div className="about-primary">
+              <div className="intro-block">
+                <p className="kicker">Electrical &amp; Computer Engineering</p>
+                <h1>Dibakar Roy</h1>
+                <p className="intro-role">ECE graduate with research interests in neural engineering, brain-computer interfaces, EEG signal processing, and biomedical machine learning.</p>
+                <p className="affiliation">Rajshahi University of Engineering &amp; Technology (RUET), Bangladesh</p>
               </div>
 
-              <div className="profile-links">
-                <a href="https://scholar.google.com/citations?user=6y0LEcUAAAAJ&hl=en" target="_blank" rel="noreferrer"><BookOpen size={16} /> Google Scholar</a>
-                <a href="/Dibakar_Roy_CV.pdf" download><Download size={16} /> Download CV</a>
-                <a href="mailto:dibakarroy4056@gmail.com"><Mail size={16} /> Email</a>
-              </div>
-            </article>
+              <article className="about-copy">
+                <h2>About</h2>
+                <p>
+                  I completed my BSc in Electrical &amp; Computer Engineering at RUET in 2026. My undergraduate research examined practical adaptation methods for neural decoding and subject-independent EEG workload classification.
+                </p>
+                <p>
+                  I am interested in neural signal processing, brain-computer interfaces, and machine learning methods that remain reliable across people, recording sessions, and sensor configurations. I also enjoy building software and embedded systems that translate technical ideas into usable tools.
+                </p>
+                <p>
+                  During my undergraduate studies, I served as a class representative, supported university and American Center events, and represented my department in competitive sports.
+                </p>
+
+                <div className="research-interests" aria-label="Research interests">
+                  <strong>Research interests</strong>
+                  <span>Neural decoding</span>
+                  <span>EEG</span>
+                  <span>Brain-computer interfaces</span>
+                  <span>Biomedical machine learning</span>
+                </div>
+
+                <div className="profile-links">
+                  <a href="https://scholar.google.com/citations?user=6y0LEcUAAAAJ&hl=en" target="_blank" rel="noreferrer"><BookOpen size={16} /> Google Scholar</a>
+                  <a href="/Dibakar_Roy_CV.pdf" download><Download size={16} /> Download CV</a>
+                  <a href="mailto:dibakarroy4056@gmail.com"><Mail size={16} /> Email</a>
+                </div>
+              </article>
+            </div>
 
             <aside className="profile-panel" aria-label="Profile summary">
               <div className="profile-image">
