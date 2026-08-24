@@ -19,8 +19,16 @@ import { useEffect, useState } from "react";
 const publications = [
   {
     year: "2026",
+    venue: "Neurocomputing · Elsevier",
+    title: "Rapid Parameter-Efficient Calibration for Cross-Session Intracortical Speech Decoding: Cross-Dataset Evaluation",
+    status: "Submitted · With Editor",
+    linkLabel: null,
+    link: null,
+  },
+  {
+    year: "2026",
     venue: "QPAIN",
-    title: "Fast Label-Free Cross-Session Calibration for Intracortical Speech Neuroprostheses",
+    title: "Fast Label-Free Cross-Session Calibration for Intra-Cortical Speech Decoding",
     status: "Published",
     linkLabel: "DOI",
     link: "https://doi.org/10.1109/QPAIN69676.2026.11546072",
@@ -54,17 +62,25 @@ const publications = [
 const research = [
   {
     label: "Undergraduate thesis · Intracortical BCI",
-    title: "Rapid cross-session calibration for speech decoding",
+    title: "Rapid parameter-efficient calibration for cross-session speech decoding",
     description:
-      "A parameter-efficient CTC framework for adapting an intracortical speech decoder with a small set of labeled calibration trials while keeping the encoder and CTC head frozen.",
-    details: ["Evaluation across six held-out T12 sessions", "Chronological, session-level testing", "Focus on practical calibration constraints"],
+      "A cross-session intracortical speech decoding framework evaluated on the public T12 and T15 datasets. Its input-space calibration strategy updates only 65,792 parameters—less than 0.05% of the complete decoder—while keeping the BiGRU encoder and CTC classifier frozen.",
+    details: [
+      "Strict chronological training, validation, and held-out future-session evaluation",
+      "T12 macro phoneme error rate reduced by 11.37% and 15.51% with 40 and 80 calibration trials",
+      "Up to 10.05% relative improvement on independent T15 evaluation",
+    ],
   },
   {
     label: "EEG · Workload classification",
     title: "Baseline-aware EEG classification",
     description:
       "A subject-independent EEG workload classification study using leakage-safe evaluation, reduced electrode configurations, and nested leave-one-subject-out validation.",
-    details: ["EEGMAT and STEW datasets", "Riemannian and spectral features", "Reduced-channel evaluation"],
+    details: [
+      "EEGMAT and STEW datasets with nested leave-one-subject-out validation",
+      "Reduced and shared montages with handcrafted and Riemannian features",
+      "Balanced accuracy of 0.8199 on EEGMAT and 0.8519 on STEW",
+    ],
   },
 ];
 
@@ -174,17 +190,17 @@ export default function Home() {
               <div className="intro-block">
                 <p className="kicker">Electrical &amp; Computer Engineering</p>
                 <h1>Dibakar Roy</h1>
-                <p className="intro-role">ECE graduate with research interests in neural engineering, brain-computer interfaces, EEG signal processing, and biomedical machine learning.</p>
+                <p className="intro-role">ECE graduate with research interests in brain-computer interfaces, neural engineering, intracortical speech decoding, EEG signal processing, and biomedical machine learning.</p>
                 <p className="affiliation">Rajshahi University of Engineering &amp; Technology (RUET), Bangladesh</p>
               </div>
 
               <article className="about-copy">
                 <h2>About</h2>
                 <p>
-                  I completed my BSc in Electrical &amp; Computer Engineering at RUET in 2026. My undergraduate research examined practical adaptation methods for neural decoding and subject-independent EEG workload classification.
+                  I completed my BSc in Electrical &amp; Computer Engineering at RUET in 2026. My undergraduate research examined parameter-efficient cross-session calibration for intracortical speech decoding and subject-independent EEG workload classification.
                 </p>
                 <p>
-                  I am interested in neural signal processing, brain-computer interfaces, and machine learning methods that remain reliable across people, recording sessions, and sensor configurations. I also enjoy building software and embedded systems that translate technical ideas into usable tools.
+                  I am interested in neural signal processing, brain-computer interfaces, and adaptive neural-decoding methods that remain reliable across people, recording sessions, and sensor configurations. I also enjoy building software and embedded systems that translate technical ideas into usable tools.
                 </p>
                 <p>
                   During my undergraduate studies, I served as a class representative, supported university and American Center events, and represented my department in competitive sports.
@@ -195,6 +211,8 @@ export default function Home() {
                   <span>Neural decoding</span>
                   <span>EEG</span>
                   <span>Brain-computer interfaces</span>
+                  <span>Cross-session neural adaptation</span>
+                  <span>Adaptive neural decoding</span>
                   <span>Biomedical machine learning</span>
                 </div>
 
@@ -250,7 +268,9 @@ export default function Home() {
                 </div>
                 <div className="publication-side">
                   <span>{publication.status}</span>
-                  <a href={publication.link} target="_blank" rel="noreferrer">{publication.linkLabel} <ArrowUpRight size={14} /></a>
+                  {publication.link && publication.linkLabel ? (
+                    <a href={publication.link} target="_blank" rel="noreferrer">{publication.linkLabel} <ArrowUpRight size={14} /></a>
+                  ) : null}
                 </div>
               </li>
             ))}
