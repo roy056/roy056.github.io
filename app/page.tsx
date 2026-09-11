@@ -19,9 +19,9 @@ import { useEffect, useState } from "react";
 const publications = [
   {
     year: "2026",
-    venue: "Neurocomputing · Elsevier",
-    title: "Rapid Parameter-Efficient Calibration for Cross-Session Intracortical Speech Decoding: Cross-Dataset Evaluation",
-    status: "Submitted · With Editor",
+    venue: "Scientific Reports · Nature Portfolio",
+    title: "Rapid Parameter-Efficient Calibration for Cross-Session Intracortical Speech Decoding Across Two Public Datasets",
+    status: "Submitted",
     linkLabel: null,
     link: null,
   },
