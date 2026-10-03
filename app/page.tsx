@@ -21,7 +21,7 @@ const publications = [
     year: "2026",
     venue: "Scientific Reports · Nature Portfolio",
     title: "Rapid Parameter-Efficient Calibration for Cross-Session Intracortical Speech Decoding Across Two Public Datasets",
-    status: "Submitted",
+    status: "Under Review",
     linkLabel: null,
     link: null,
   },
